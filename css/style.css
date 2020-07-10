@@ -12,7 +12,17 @@ p{
 }
 body{
 	margin: 20px;
-	div{
-		background-image: url('Images/cover.jpg');
-	}
+
+}
+table,th,td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th,td{
+	padding: 5px;
+}
+
+#t01{
+	color: white;
+	background-color: black;
 }

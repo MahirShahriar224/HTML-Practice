@@ -12,11 +12,31 @@
 	
 	<!--  body {background-color:#ffffcc; } -->
 	<style>
-		body{ background-color:#ffffcc;
+		body{ 
 		      background-image: url('Images/cover.jpg'); }
 	      
 		h3   {color: #ff0000;}
 		h2   {background-color: #ffc61a; }
+
+		
+
+		
+		
+
+	
+		li a {display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 16px;
+			  text-decoration: none;}
+
+		li a:hover {
+		  background-color: #111111;}
+
+
+
+		
+
 	</style>
 
 </head>
@@ -44,8 +64,10 @@
 	<div>
 		<p title="This is about paragraph" style="background-color: tomato; border: solid #0066cc; ">
 			A <b>paragraph is a self-contained unit </b> of a discourse in <i>writing dealing</i> with a <em>particular point</em> or idea.<br> <mark>A paragraph consists of one or more sentences.</mark> Though not required by the <del>syntax of any</del> language, <ins>paragraphs are usually</ins> an expected part of formal writing, used to organize longer prose.
-
+			<figure>
 			<img src="Images/html_image.png" alt="This is a html5 image">
+			<figcaption>This is a html5 image</figcaption>
+			</figure>
 
 		</p><hr>
 	</div>
@@ -107,7 +129,7 @@
 	</div>
 	
 
-	<div>
+	<div title="this is button link">
 		<button onclick="w3school.com">
 			w3school
 		</button>
@@ -118,20 +140,145 @@
 
 		<a href="#h3">Jump to heading 3</a>
 
+	</div><hr>
+
+
+	<!---- for table creation -->
+	<div>
+
+		<table id="t01"  title="This is a borderless table" style="text-align: center;">
+			<!-- execute this before adding table function in css -->
+			<!-- table row <tr> -->
+				<P1>This is a borderless table</P1>
+			<tr>
+				<!-- table header <th> -->
+				<th>Name</th>
+				<th>Profession</th>
+				<th>Country</th>	
+			</tr>
+			<tr>
+				<!-- table data <td> -->
+				<td>Mahir</td>
+				<td>Student</td>
+				<td>Bangladesh</td>
+			</tr>
+			<tr>
+				<td>Shahriar</td>
+				<td>Business-man</td>
+				<td>U.S.A</td>
+			</tr>
+		</table>
+	</div><hr>
+
+	<div>
+		<!---- for border table  creation -->
+		<table title="This is a border table" style="text-align: center;">
+			<!-- table row <tr> -->
+				<caption>This is a Border table</caption>
+			<tr>
+				<!-- table header <th> -->
+				<th>Company</th>
+				<th>Possition</th>
+				<th>Country</th>	
+			</tr>
+			<tr>
+				<!-- table data <td> -->
+				<td>ABC</td>
+				<td>MD</td>
+				<td>Bangladesh</td>
+			</tr>
+			<tr>
+				<td>XYZ</td>
+				<td>Sellsman</td>
+				<td>U.S.A</td>
+			</tr>
+		</table>
+	</div><hr>
+
+	<div>
+		<!-- dise,circle,square,none -->
+		<ul style="list-style: square;">
+			<p>unordered list</p>
+			<li>Python</li>
+			<li>Java</li>
+			<li>C#</li>
+			<li>Ruby</li>
+		</ul><hr>
+		
+
+		<!-- for order use "type" like : 1,A,a,I,i  and to start from specific number we use "start= 20"-->
+		<ol type="1" start="20">
+			<p style="border: none;">Ordered list</p>
+			<li>Facebook</li>
+			<li>Youtube</li>
+			<li>Instagram</li>
+			<li>What'sapp</li>
+		
+		</ol><hr>
+	</div>
+
+
+	<div>
+		<dl>
+			<p style="border: none;"> Descripted order list</p>
+		   <ol>
+		      <li> <dt>Coffee</dt> </li>
+		         <dd>- black hot drink</dd>
+		      <li> <dt>Milk</dt>  </li>
+		         <dd>- white cold drink</dd>
+		   </ol>
+		</dl>
+	</div><hr>
+
+	
+	<div>
+		<h2>Navigation Menu</h2>
+		<ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden;background-color:#350335;">
+			  <li style="float: left;"><a href="#home">Home</a></li>
+			  <li style="float: left;"><a href="#news">News</a></li>
+			  <li style="float: left;"><a href="#contact">Contact</a></li>
+			  <li style="float: left;"><a href="#about">About</a></li>
+	    </ul>
+	</div><hr>
+    
+
+	<div>
+		<video width="320" height="240" controls>
+		  <source src="Images/movie.mp4" type="video/mp4">
+		  This is a youtube video.
+	   </video>
+	</div>
+
+
+	<div>
+	<h1>The fieldset element</h1>
+	<fieldset>
+		  <legend>Personalia:</legend>
+		  <label for="fname">First name:</label>
+		  <input type="text" id="fname" name="fname"><br><br>
+		  <label for="lname">Last name:</label>
+		  <input type="text" id="lname" name="lname"><br><br>
+		  <label for="email">Email:</label>
+		  <input type="email" id="email" name="email"><br><br>
+		  <label for="birthday">Birthday:</label>
+		  <input type="date" id="birthday" name="birthday"><br><br>
+		  <input type="submit" value="Submit">
+	</fieldset>
+
+
 	</div>
 
 
 
 
-
-	<address style="border: 5px solid #ff4dd2;">
+    <!-- this is address bar -->
+	  <address style="border: 5px solid #ff4dd2;">
+		
 		This is written by Mahir Shahriar<br>
 		Email: mahir.shahriar224@gmail.com <br>
 		<a href="mailto:mahir.shahriar224@gmail.com">Send mail if needed</a><br>
 		Begumgonj,Noakhali-3821
-
-	</address>
-
+	   </address>
 
 
 	
