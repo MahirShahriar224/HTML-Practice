@@ -1,0 +1,41 @@
+body{
+   /* this is for body */
+   /* */
+
+	background-color: rgb(252, 207, 252);
+	padding: 20px;
+	margin: 20px;
+	/* font-size: 1vw;*/  /*viewport width*/
+}
+
+/* for class declaration use "."  */
+.city1{
+		
+	background-color: #00ffff;
+	color:#f00ff0;
+}
+.city2{
+	
+	border-style: dashed;
+}
+.button{
+	color: white;
+	text-align: center;
+	background-color: red;
+	cursor: hand;
+	font-size: 200%;
+}
+.equation{
+	
+	
+font-style: italic;
+
+
+}
+
+/* for id declaration use "#" */
+#head2{
+	font-style: italic;
+	font-size: 120%;
+	text-align: center;
+}
